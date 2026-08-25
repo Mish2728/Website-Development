@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportzone</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+            background-color: rgb(198, 249, 143) ;
+            min-height: 1800px;
+        }
+        .scorezone{
+            position: fixed;
+            background-color: blueviolet;
+            padding: 10px;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        .playerwrapper{
+            position: relative;
+            display: inline-block;
+            margin-top: 15px;
+        }
+        .playercard{
+            background-color: azure;
+            border: 2px solid;
+            text-align: center;
+            padding: 20px 30px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        .winnerbadge{
+            position: absolute;
+            top: -12px;
+            right: -12px;
+        }
+    </style>
+</head>
+<body>
+   <div class="scorezone">
+    &#127942; SportZone &nbsp;|&nbsp; Live Score: Team A 3 — 2 Team B &nbsp;|&nbsp; FIXED</div>
+   <h1>&#127942; SportZone Tournament</h1>
+   <h2>Absolute Positioning</h2>
+   <p>The gold badge is pinned to the player card using <strong>position: absolute</strong>. The card has <strong>position:
+    relative</strong></p>
+<div class="playerwrapper"></div>
+ <div class="playercard">&#9917; Alex Johnson<br>Striker — 12 Goals</div>   
+<div class="winnerbadge">&#127942; MVP</div>
+
+</body>
+</html>
