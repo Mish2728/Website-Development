@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCTION TO HTML DOM</title>
+    <style>
+        .alert{
+            color: rgb(81, 8, 153);
+            background-color: rgb(162, 162, 247);
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">WELCOME</h1>
+    <p>HELLO</p>
+    <p>READY TO LEARN ABOUT OUR SOLAR SYSTEM?</p>
+    <p>The Solar System is the gravitationally bound system that includes the Sun and all the celestial objects that orbit
+    it—including eight major planets, hundreds of moons, dwarf planets, asteroids, and comets.</p>
+    <script>
+        let div = document.createElement("div");
+        div.id = "paragraph";
+        div.className = "alert";
+        div.innerHTML = "<p><b>Congrats! You have learned more about our solar system.</b></p>";
+         document.body.append(div);
+        let heading=document.getElementById("heading");
+        heading.innerHTML= "&#129680";
+        document.querySelector("p").innerHTML= "<strong>Good Job!</strong>";
+    </script>
+</body>
+</html>
