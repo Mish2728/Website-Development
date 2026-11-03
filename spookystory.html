@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Spooky Story</title>
+    <style>
+        body.dark{
+            color: rgb(251, 251, 244);
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+ <h1>THE BASMENT DOOR</h1>
+ <p id="story">My friend was hiding in the basment and i have to find him</p>
+ <button onclick="goDark()">Get In The Mood</button> 
+ <div class="entry">type your name here, if you dare to <input type="text" id="name"></div>
+ <button onclick="typeAndScream()">Please, please don't click it</button>
+    <button onclick="finishTheStory()">Tell me what happened</button>
+    <audio id="audio" src="dragon-studio-spooky-sound-410562.mp3" type="audio/mpeg"></audio>
+<script>
+    function typeAndScream(){
+        document.getElementById("audio").play();
+        var personName = document.getElementById("name").value;
+        alert("I told you not to do that"+ personName);
+    }
+    function goDark(){
+        document.body.className="dark";
+    }
+    function finishTheStory(){
+        document.getElementById("story").innerHTML="so I searched the dampdeungon. There you are!"
+    }
+
+</script>
+</body>
+</html>
