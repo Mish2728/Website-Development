@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXT</title>
+    <style>
+        .text {
+            border: 1px solid black;
+            height: 200px;
+            width: 250px;
+            margin: auto;
+
+        }
+
+        .buttons {
+            padding: 10px;
+            width: 200px;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="h2">Make Changes to the text</h2>
+    <h1>Hi I am Mishita. Nice to meet you.</h1>
+  <h2>      
+        <button onclick="hidetext()">HIDE</button>
+        <button onclick="showtext()">SHOW</button>
+</h2>
+    <script>
+        let h2 = document.querySelector(".text");
+        function hidetext() {
+            h2.style.display = "none";
+        }
+        function showtext() {
+            h2.style.display = "block";
+        }
+        h2.onmouseenter = function () {
+            h2.style.background = "pink";
+        }
+        h2.onmouseleave = function () {
+            h2.style.background = "black";
+        }   
+    </script>
+</body>
+
+</html>
